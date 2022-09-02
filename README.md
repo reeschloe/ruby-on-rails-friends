@@ -3,4 +3,4 @@
 ## Installation Instructions
 
 - Fork and clone repository
-- Run 'rails s'
+- Run `rails s`
