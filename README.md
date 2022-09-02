@@ -8,7 +8,3 @@
  1. Install the gems included in this project using bundler: bundle install
  1. Run `rails db:create db:migrate` to set up database
  1. Run `rails s` to start on localhost:3000
-<<<<<<< HEAD
- 
-=======
->>>>>>> 2eb5886f3a1a5607c9669db563fcd0898d463867
