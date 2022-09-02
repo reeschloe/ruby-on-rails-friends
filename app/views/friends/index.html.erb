@@ -8,19 +8,22 @@
         <th>Email</th>
         <th>Phone</th>
         <th>Twitter</th>
+        <th>User Id</th>
         <th colspan="3"></th>
       </tr>
     </thead>
     <tbody>
       <% @friends.each do |friend| %>
-        <tr>
-          <%= render friend %>
-          <td>
-            <%= link_to "Show", friend %>
-            <%= link_to "Edit", edit_friend_path(friend) %>
-            <%= link_to "Destroy", friend, method: :delete %>
-          </td>
-        </tr>
+        <% if friend.user == current_user %>
+          <tr>
+            <%= render friend %>
+            <td>
+              <%= link_to "Show", friend %>
+              <%= link_to "Edit", edit_friend_path(friend) %>
+              <%= link_to "Destroy", friend, 'data-turbo-method': :delete %>
+            </td>
+          </tr>
+        <% end %>
       <% end %>
     </tbody>
 </table>
