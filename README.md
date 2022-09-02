@@ -8,3 +8,8 @@
  1. Install the gems included in this project using bundler: bundle install
  1. Run `rails db:create db:migrate` to set up database
  1. Run `rails s` to start on localhost:3000
+
+## Pages
+
+- Home page when logged out:
+![Dashboard view](/screenshots/dashboard.png "Dashboard")
